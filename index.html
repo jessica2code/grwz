@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jessica · 个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="#">Jessica</a>
+        <nav class="nav" aria-label="主导航">
+          <a href="#about">关于</a>
+          <a href="#work">工作</a>
+          <a href="#life">生活</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">你好，我是</p>
+          <h1 id="hero-title" class="hero-title">Jessica Lin</h1>
+          <p class="hero-tagline">
+            产品设计师 · 相信好的界面是<strong>清晰的叙事</strong>与<strong>克制的细节</strong>
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">取得联系</a>
+            <a class="btn btn-ghost" href="#work">看看我在做什么</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-about">
+        <div class="container narrow">
+          <h2 class="section-title">关于我</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                我在上海生活与工作，白天把复杂需求拆成可理解的流程与界面；晚上喜欢翻设计史与独立杂志，偶尔用胶片记录街角的光。
+              </p>
+              <p>
+                名字里的「Jessica」是家人起的英文名——对我来说，它代表一种<strong>温和但坚定</strong>的态度：对用户耐心，对标准不妥协。
+              </p>
+            </div>
+            <aside class="about-meta" aria-label="基本信息">
+              <dl>
+                <div>
+                  <dt>角色</dt>
+                  <dd>高级产品设计师</dd>
+                </div>
+                <div>
+                  <dt>专注</dt>
+                  <dd>B 端工具、设计系统、可用性</dd>
+                </div>
+                <div>
+                  <dt>工具</dt>
+                  <dd>Figma、Principle、少量前端</dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section section-work">
+        <div class="container">
+          <h2 class="section-title">近期方向</h2>
+          <p class="section-lead">
+            这些不是客户案例展示，而是我现阶段最关心的几条线——真实项目可在面谈时分享。
+          </p>
+          <ul class="card-list">
+            <li class="card">
+              <span class="card-label">01</span>
+              <h3 class="card-title">协作类产品</h3>
+              <p class="card-body">
+                让多人、多角色在同一套界面里少误解、少返工；从信息架构到微文案一起打磨。
+              </p>
+            </li>
+            <li class="card">
+              <span class="card-label">02</span>
+              <h3 class="card-title">设计系统</h3>
+              <p class="card-body">
+                组件不是堆叠，而是约定。我在意 token、文档与工程落地的对齐。
+              </p>
+            </li>
+            <li class="card">
+              <span class="card-label">03</span>
+              <h3 class="card-title">研究与测试</h3>
+              <p class="card-body">
+                定期做可用性访谈与任务测试，用证据而不是直觉说服团队。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="life" class="section section-life">
+        <div class="container narrow">
+          <h2 class="section-title">生活与侧面</h2>
+          <ul class="life-list">
+            <li>
+              <strong>摄影</strong>
+              — 偏爱 50mm 与阴天，主题多是城市里的安静角落。
+            </li>
+            <li>
+              <strong>阅读</strong>
+              — 设计、城市、小说混读；笔记本里全是待整理的书摘。
+            </li>
+            <li>
+              <strong>运动</strong>
+              — 游泳与徒步，用来清空大脑里的线框图。
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="container narrow">
+          <h2 class="section-title">联系</h2>
+          <p class="contact-intro">
+            若你有产品合作、设计评审或单纯想聊聊排版与留白，欢迎写信——我通常会在两个工作日内回复。
+          </p>
+          <a class="contact-email" href="mailto:hello@jessica-lin.example">hello@jessica-lin.example</a>
+          <p class="contact-note">（示例邮箱，部署时请替换为你的真实地址。）</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Jessica Lin. 用静态 HTML 制作，可随意改造。</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
